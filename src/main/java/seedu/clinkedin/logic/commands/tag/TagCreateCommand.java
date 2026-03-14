@@ -2,12 +2,14 @@ package seedu.clinkedin.logic.commands.tag;
 
 import static java.util.Objects.requireNonNull;
 
-import seedu.clinkedin.logic.Messages;
 import seedu.clinkedin.logic.commands.CommandResult;
 import seedu.clinkedin.logic.commands.exceptions.CommandException;
 import seedu.clinkedin.model.Model;
 import seedu.clinkedin.model.tag.Tag;
 
+/**
+ * Create a new tag in the address book.
+ */
 public class TagCreateCommand extends TagCommand {
     public static final String COMMAND_WORD = "create";
 
@@ -20,9 +22,12 @@ public class TagCreateCommand extends TagCommand {
 
     private final Tag newTag;
 
-    public TagCreateCommand(Tag inNewTagName) {
-        requireNonNull(inNewTagName);
-        newTag = inNewTagName;
+    /**
+     * Creates a TagCreateCommand to add the specified {@code Tag}
+     */
+    public TagCreateCommand(Tag inNewTag) {
+        requireNonNull(inNewTag);
+        newTag = inNewTag;
     }
 
     @Override

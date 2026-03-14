@@ -3,8 +3,6 @@ package seedu.clinkedin.model.tag;
 import static java.util.Objects.requireNonNull;
 import static seedu.clinkedin.commons.util.AppUtil.checkArgument;
 
-import seedu.clinkedin.model.person.Person;
-
 /**
  * Represents a Tag in the address book.
  * Guarantees: immutable; name is valid as declared in {@link #isValidTagName(String)}

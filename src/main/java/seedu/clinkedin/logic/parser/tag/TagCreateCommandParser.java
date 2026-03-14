@@ -8,8 +8,17 @@ import seedu.clinkedin.logic.parser.ParserUtil;
 import seedu.clinkedin.logic.parser.exceptions.ParseException;
 import seedu.clinkedin.model.tag.Tag;
 
+/**
+ * Parses input arguments and creates a new TagCreateCommand object
+ */
 public class TagCreateCommandParser implements Parser<TagCreateCommand> {
 
+    /**
+     * Parses the given {@code String} of arguments in the context of the TagCreateCommand
+     * and returns a TagCreateCommand object for execution.
+     *
+     * @throws ParseException if the user input does not conform to the expected format
+     */
     public TagCreateCommand parse(String args) throws ParseException {
         String trimmedArgs = args.trim();
         if (trimmedArgs.isEmpty()) {

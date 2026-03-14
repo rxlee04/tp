@@ -6,13 +6,15 @@ import static seedu.clinkedin.logic.Messages.MESSAGE_UNKNOWN_TAG_COMMAND;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import seedu.clinkedin.logic.commands.Command;
 import seedu.clinkedin.logic.commands.HelpCommand;
 import seedu.clinkedin.logic.commands.tag.TagCommand;
 import seedu.clinkedin.logic.commands.tag.TagCreateCommand;
 import seedu.clinkedin.logic.parser.Parser;
 import seedu.clinkedin.logic.parser.exceptions.ParseException;
 
+/**
+ * Parses tag command.
+ */
 public class TagCommandParser implements Parser<TagCommand> {
 
     /**

@@ -9,6 +9,12 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import seedu.clinkedin.model.tag.exceptions.DuplicateTagException;
 
+/**
+ * A list of tags that enforces uniqueness between its elements and does not allow nulls.
+ * A tag is considered unique based on {@code Tag#equals(Object)}.
+ *
+ * Supports a minimal set of list operations.
+ */
 public class UniqueTagList implements Iterable<Tag> {
     private final ObservableList<Tag> internalList = FXCollections.observableArrayList();
     private final ObservableList<Tag> internalUnmodifiableList =

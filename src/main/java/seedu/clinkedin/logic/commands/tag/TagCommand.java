@@ -2,6 +2,9 @@ package seedu.clinkedin.logic.commands.tag;
 
 import seedu.clinkedin.logic.commands.Command;
 
+/**
+ * Represents a tag command with hidden internal logic and the ability to be executed.
+ */
 public abstract class TagCommand extends Command {
 
     public static final String COMMAND_WORD = "tag";
